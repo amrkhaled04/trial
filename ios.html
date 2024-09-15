@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Version</title>
+    <script>
+        window.onload = function() {
+            var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+            
+            if (isSafari) {
+                // If Safari, open the USDZ file in AR Quick Look
+                window.location.href = "https://amrkhaled04.github.io/3D-models/Zombie.usdz";
+            } else {
+                // If not Safari, prompt user to open in Safari
+                document.getElementById('message').innerText = "For the best AR experience, please open this link in Safari. Currently, you're using a browser that may not support AR viewing.";
+                document.getElementById('download-link').style.display = 'block';
+            }
+        };
+    </script>
+</head>
+<body>
+    <p id="message">Loading iOS AR experience...</p>
+    <a id="download-link" href="https://amrkhaled04.github.io/3D-models/Zombie.usdz" style="display:none;">Or click here to download the file.</a>
+</body>
+</html>

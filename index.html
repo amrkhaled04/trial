@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        function redirectUser() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+            var isAndroid = /android/i.test(userAgent);
+
+            if (isAndroid) {
+                // Redirect to Scene Viewer for Android devices
+                window.location.href = "https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/amrkhaled04/3D-models/main/untitled.gltf&mode=ar_only";
+            } else if (isIOS) {
+                // Attempt to launch AR Quick Look directly
+                // Note: This might not always trigger AR Quick Look as expected
+                window.location.href = "https://amrkhaled04.github.io/3D-models/Untitled%20Object%204.usdz";
+            } else {
+                // Optional: handle other devices or desktop browsers
+                window.location.href = "https://your-default-link.com";
+            }
+        }
+
+        window.onload = redirectUser;
+    </script>
+</head>
+<body>
+    <p>Redirecting, please wait...</p>
+    <iframe id="model-iframe" style="display:none;"></iframe>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        function redirectUser() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/amrkhaled04/3D-models/main/untitled.gltf&mode=ar_only ";
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://amrkhaled04.github.io/3D-models/Zombie.usdz";
+            } else {
+                window.location.href = "https://your-default-link.com";  // Optional: handle other devices or desktop browsers
+            }
+        }
+
+        // Redirect the user when the page loads
+        window.onload = redirectUser;
+    </script>
+</head>
+<body>
+    <p>Redirecting, please wait...</p>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        function redirectUser() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Check if the device is Android
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/amrkhaled04/3D-models/main/untitled.gltf&mode=ar_only";
+            } 
+            // Check if the device is iOS (iPhone, iPad, iPod)
+            else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://amrkhaled04.github.io/3D-models/ios.html"; // Redirect to the iOS-specific page
+            } 
+            // Default case for other devices or desktop browsers
+            else {
+                window.location.href = "https://your-default-link.com";
+            }
+        }
+
+        // Redirect the user when the page loads
+        window.onload = redirectUser;
+    </script>
+</head>
+<body>
+    <p>Redirecting, please wait...</p>
+</body>
+</html>
+
+
